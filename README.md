@@ -19,18 +19,31 @@ CBLUE关系抽取模型
 
 ### Usage - 使用方法
 
-1. 下载预训练模型
+0. 下载本仓库:
+    ```Shell
+    git clone https://github.com/Robin-WZQ/CBLUE_CMeIE_baseline.git
+    cd CBLUE_CMeIE_baseline
+    ```
+
+1. 安装依赖:
+    ```Shell
+    pip install -r requirements.txt
+    ```
+
+2. 下载预训练模型
 
 https://github.com/ymcui/Chinese-BERT-wwm#%E6%A8%A1%E5%9E%8B%E5%AF%B9%E6%AF%94
 
 P.S. 我使用的是Roberta-Large，也可以使用别的模型。
 
-2. 运行
-
-'''
-python
-run main.py
-'''
+3. 运行
+    ```Shell
+    run main.py
+    ```
+4. 生成文件
+- bert_re.pth # 训练完的模型
+- dev_pred.json # 开发集预测结果
+- RE_pred_0417_01.json # 测试集预测结果（提交时记得命名为CMeIE_test.jsonl，并压缩后提交）
 
 ### Result - 结果
 
