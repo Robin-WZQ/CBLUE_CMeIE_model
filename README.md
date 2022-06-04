@@ -19,6 +19,19 @@ CBLUE关系抽取模型
 
 ### Usage - 使用方法
 
+1. 下载预训练模型
+
+https://github.com/ymcui/Chinese-BERT-wwm#%E6%A8%A1%E5%9E%8B%E5%AF%B9%E6%AF%94
+
+P.S. 我使用的是Roberta-Large，也可以使用别的模型。
+
+2. 运行
+
+'''
+python
+run main.py
+'''
+
 ### Result - 结果
 
 ### Reference - 参考
