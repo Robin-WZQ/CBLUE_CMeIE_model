@@ -47,7 +47,7 @@ P.S. 我使用的是Roberta-base(Large太大电脑跑不动了-_-)，也可以�
 
 ### Result - 结果
 <div align=center>
-    <img width="416" alt="pic1" src="https://user-images.githubusercontent.com/60317828/172048567-a631a1bd-8082-4847-b7b8-06f799ecc41c.png">
+    <img width="816" alt="pic1" src="https://user-images.githubusercontent.com/60317828/172048567-a631a1bd-8082-4847-b7b8-06f799ecc41c.png">
 </div>
 
 
