@@ -13,7 +13,7 @@ CBLUE关系抽取模型
 
 ## Enviroment - 环境
 - python = 3.8.3
-- pytorch = 1.10.0+cu113
+- pytorch = 1.10.2+cu113
 - pytorch_pretrained_bert
 - tqdm
 
