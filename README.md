@@ -32,18 +32,38 @@ CBLUE关系抽取模型
 
 2. 下载预训练模型
 
-https://github.com/ymcui/Chinese-BERT-wwm#%E6%A8%A1%E5%9E%8B%E5%AF%B9%E6%AF%94
+https://drive.google.com/file/d/1eHM3l4fMo6DsQYGmey7UZGiTmQquHw25/view
 
 P.S. 我使用的是Roberta-base(Large太大电脑跑不动了-_-)，也可以使用别的模型。
 
-3. 运行
+3.保证目录如下所示：
+
+```
+| Chinese_roberta_wwm_ext_pytorch # 中文预训练模型
+----| bert_config.json
+----| pytorch_model.bin
+----| vocab.txt
+| CMeIE
+----| CMeIE_train.json # 训练集
+----| CMeIE_dev.json # 开发集
+----| CMeIE_test.json # 测试集
+----| README.txt # 数据说明文件
+----| schema.json # 关系约束
+| record
+draw.py # 绘图函数
+roberta_base.py # 主函数
+README.md # 说明文件
+requirements.txt # 配置文件
+```
+
+4. 运行
     ```Shell
     run main.py
     ```
-4. 生成文件
-- bert_re.pth # 训练完的模型
+5. 生成文件
+- roberta.pth # 训练完的模型
 - dev_pred.json # 开发集预测结果
-- RE_pred_0417_01.json # 测试集预测结果（提交时记得命名为CMeIE_test.jsonl，并压缩后提交）
+- RE_pred.json # 测试集预测结果（提交时需命名为CMeIE_test.jsonl，并压缩后提交）
 
 ### Result - 结果
 <div align=center>
@@ -51,9 +71,10 @@ P.S. 我使用的是Roberta-base(Large太大电脑跑不动了-_-)，也可以�
 </div>
 
 
-
 ### Reference - 参考
 
 https://github.com/CBLUEbenchmark/CBLUE
+
+https://github.com/ymcui/Chinese-BERT-wwm#%E6%A8%A1%E5%9E%8B%E5%AF%B9%E6%AF%94
 
 https://zhuanlan.zhihu.com/p/136277427
