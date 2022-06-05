@@ -21,8 +21,8 @@ CBLUE关系抽取模型，学习使用
 
 0. 下载本仓库:
     ```Shell
-    git clone https://github.com/Robin-WZQ/CBLUE_CMeIE_baseline.git
-    cd CBLUE_CMeIE_baseline
+    git clone https://github.com/Robin-WZQ/CBLUE_CMeIE_model.git
+    cd CBLUE_CMeIE_model
     ```
 
 1. 安装依赖:
