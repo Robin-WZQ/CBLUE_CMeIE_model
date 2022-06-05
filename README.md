@@ -1,4 +1,4 @@
-# CBLUE_CMeIE
+# CBLUE_CMeIE_Model
 CBLUE关系抽取模型，学习使用
 
 ## Mission - 任务描述
