@@ -1,4 +1,4 @@
-# CBLUE_CMeIE_baseline
+# CBLUE_CMeIE
 CBLUE关系抽取模型
 
 ## Mission - 任务描述
