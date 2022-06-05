@@ -45,8 +45,8 @@ def load_data(filename):
     return D 
 
 # 加载数据集
-train_data = load_data('data-1120190892/CMeIE_train.json')
-valid_data = load_data('data-1120190892/CMeIE_dev.json')  
+train_data = load_data('CMeIE/CMeIE_train.json')
+valid_data = load_data('CMeIE/CMeIE_dev.json')  
 
 def search(pattern, sequence):
     """从sequence中寻找子串pattern
@@ -72,7 +72,7 @@ for data in tqdm(train_data):
 print(len(train_data_new))
 
 # 读取schema
-with open('data-1120190892/schema.json', encoding='utf-8') as f:
+with open('CMeIE/schema.json', encoding='utf-8') as f:
     id2predicate, predicate2id, n = {}, {}, 0
     predicate2type = {}
     for l in f:
@@ -298,7 +298,7 @@ def evaluate(data, model, device):
     """评估函数，计算f1、precision、recall
     """
     X, Y, Z = 1e-10, 1e-10, 1e-10
-    f = open('data-1120190892/dev_pred.json', 'w', encoding='utf-8')
+    f = open('CMeIE/dev_pred.json', 'w', encoding='utf-8')
     pbar = tqdm()
     for d in data:
         R = extract_spoes(d['text'], model, device)
@@ -363,13 +363,13 @@ def train(model, train_loader, optimizer, epoches, device):
             val_f1, pre, rec = evaluate(valid_data, net, DEVICE)
             print("f1, pre, rec: ", val_f1, pre, rec)
             if val_f1>f1_max:
-                torch.save(net.state_dict(), "data-1120190892/roberta.pth")
+                torch.save(net.state_dict(), "CMeIE/roberta.pth")
                 f1_max = val_f1
         
         val_f1_r.append((_ + 1,val_f1))
 
 # 如果运行完一次可以将其还原
-# net.load_state_dict(torch.load("data-1120190892/roberta.pth"))
+# net.load_state_dict(torch.load("CMeIE/roberta.pth"))
 train(net, train_loader, optimizer, 5, DEVICE)
 
 def combine_spoes(spoes):
@@ -410,5 +410,5 @@ def predict_to_file(in_file, out_file):
             fw.write(s + '\n')
     fw.close()
 
-predict_to_file('data-1120190892/CMeIE_test.json', 'data-1120190892/RE_pred.json')
+predict_to_file('CMeIE/CMeIE_test.json', 'CMeIE/RE_pred.json')
 record()
