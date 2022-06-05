@@ -34,7 +34,7 @@ CBLUE关系抽取模型
 
 https://github.com/ymcui/Chinese-BERT-wwm#%E6%A8%A1%E5%9E%8B%E5%AF%B9%E6%AF%94
 
-P.S. 我使用的是Roberta-Large，也可以使用别的模型。
+P.S. 我使用的是Roberta-base(Large太大电脑跑不动了-_-)，也可以使用别的模型。
 
 3. 运行
     ```Shell
