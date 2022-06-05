@@ -46,8 +46,10 @@ P.S. 我使用的是Roberta-base(Large太大电脑跑不动了-_-)，也可以�
 - RE_pred_0417_01.json # 测试集预测结果（提交时记得命名为CMeIE_test.jsonl，并压缩后提交）
 
 ### Result - 结果
+<div align=center>
+    <img width="416" alt="pic1" src="https://user-images.githubusercontent.com/60317828/172048567-a631a1bd-8082-4847-b7b8-06f799ecc41c.png">
+</div>
 
-<img width="416" alt="pic1" src="https://user-images.githubusercontent.com/60317828/172048567-a631a1bd-8082-4847-b7b8-06f799ecc41c.png">
 
 
 ### Reference - 参考
