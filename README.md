@@ -71,7 +71,7 @@ requirements.txt # 配置文件
 
 结果有些拉，不过就当作baseline也可以。
 
-参考论文为”A Novel Cascade Binary Tagging Framework for Relational Triple Extraction”( CASREL)
+参考论文为”A Novel Cascade Binary Tagging Framework for Relational Triple Extraction” (CASREL)
 
 ## Reference - 参考
 
