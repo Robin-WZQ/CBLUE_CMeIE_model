@@ -69,6 +69,7 @@ requirements.txt # 配置文件
     <img width="816" alt="pic1" src="https://user-images.githubusercontent.com/60317828/172048567-a631a1bd-8082-4847-b7b8-06f799ecc41c.png">
 </div>
 
+结果有些拉，不过就当作baseline也可以。参考论文为”A Novel Cascade Binary Tagging Framework for Relational Triple Extraction”( CASREL)
 
 ## Reference - 参考
 
