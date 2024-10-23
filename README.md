@@ -57,7 +57,7 @@ requirements.txt # 配置文件
 
 4. 运行
     ```Shell
-    run main.py
+    run roberta_base.py
     ```
 5. 生成文件
 - roberta.pth # 训练完的模型
